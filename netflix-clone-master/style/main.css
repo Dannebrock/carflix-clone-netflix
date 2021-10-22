@@ -1,0 +1,288 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*reset css*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    margin-left: 0px;
+    height: 60px;
+    
+    /*color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;*/
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+/* evento do mouse emcima do link*/
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/netflix-clone-master/img/capa-fast1.jpg');
+
+    height:400px;
+    background-size:cover; /*pega a area de cobertura da caixa*/
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%; /* ideal trabalhar com %*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px; /*espaço interno no elemento*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*identficar que é um botão ao passar o mouse*/
+    transition: .3s ease all; /* cuidar da parte da transiçã, animação ao passar o mouse*/
+}
+
+/*inverter a cor ao passar o mouse emcima do botão */
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+
+/*canais */
+
+.canal-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/netflix-clone-master/img/capa-7008.jpg');
+
+    height:400px;
+    background-size:cover; /*pega a area de cobertura da caixa*/
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.canal-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.canal-principal .titulo{
+    margin-top: 15%; /* ideal trabalhar com %*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+/*filmes */
+
+.filmes-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/netflix-clone-master/img/capa-filmes.jpg');
+
+    height:400px;
+    background-size:cover; /*pega a area de cobertura da caixa*/
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filmes-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filmes-principal .titulo{
+    margin-top: 15%; /* ideal trabalhar com %*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+
+/*documentarios */
+
+.documentarios-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/netflix-clone-master/img/capa-documentarios.jpg');
+
+    height:400px;
+    background-size:cover; /*pega a area de cobertura da caixa*/
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.documentarios-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.documentarios-principal .titulo{
+    margin-top: 15%; /* ideal trabalhar com %*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+/*sobre*/
+
+.about{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .logotipo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+    
+}
+
+.about .sobre{
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+
+footer .container .botao-linkdin{
+    background-image: url(/netflix-clone-master/img/linkdin.jpg);
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2%;
+    padding:20px 60px; /*espaço interno no elemento */
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+    
+    
+    cursor: pointer; /*identficar que é um botão ao passar o mouse*/
+    transition: .3s ease all; /* cuidar da parte da transiçã, animação ao passar o mouse*/
+}
+
+
+
+/*inverter a cor ao passar o mouse emcima do botão */
+footer .container .botao-linkdin:hover{
+    background-color:white;
+    color:black;
+}
+
+footer .container .assinatura{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
